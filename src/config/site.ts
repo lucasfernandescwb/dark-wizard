@@ -15,9 +15,9 @@ export const siteConfig = {
   guarantee:
     "Adquira o DarkWizard com tranquilidade. Você conta com o direito de arrependimento previsto no Código de Defesa do Consumidor, podendo solicitar o reembolso dentro do prazo legal de até 7 dias, contado conforme a legislação aplicável.",
   producer: "DarkWizard",
-  contactEmail: "",
-  supportEmail: "",
-  responsibleName: "[PREENCHER]",
+  contactEmail: "suporte@darkwizard.com",
+  supportEmail: "suporte@darkwizard.com",
+  responsibleName: "Lucas Fernandes Lima",
   document: "[PREENCHER]",
   address: "[PREENCHER]",
   socialLinks: [] as Array<{ label: string; href: string }>,

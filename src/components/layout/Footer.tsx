@@ -9,29 +9,24 @@ export function Footer() {
         <div className="grid gap-10 border-b border-violet-300/10 pb-8 text-sm text-slate-400 md:grid-cols-[1.4fr_1fr]">
           <div>
             <p className="text-lg font-black text-white">{siteConfig.productName}</p>
-            <p className="mt-4">{siteConfig.responsibleName}</p>
-            <p className="mt-1">CPF/CNPJ: {siteConfig.document}</p>
-            <p className="mt-1">Endereço: {siteConfig.address}</p>
+            {/* {siteConfig.responsibleName && <p className="mt-4">{siteConfig.responsibleName}</p>}
+            {siteConfig.document && <p className="mt-1">CPF/CNPJ: {siteConfig.document}</p>}
+            {siteConfig.address && <p className="mt-1">Endereço: {siteConfig.address}</p>} */}
             {siteConfig.contactEmail ? (
               <a className="mt-1 block transition hover:text-violet-300" href={`mailto:${siteConfig.contactEmail}`}>
                 E-mail: {siteConfig.contactEmail}
               </a>
             ) : (
-              <p className="mt-1">E-mail de contato: [PREENCHER]</p>
+              <p className="mt-1">E-mail de contato: suporte@darkwizard.com</p>
             )}
           </div>
           <nav aria-label="Informações institucionais">
             <p className="mb-4 font-black text-white">Informações</p>
             <div className="grid gap-3 sm:grid-cols-2">
-              <Link href="/#sobre" className="transition hover:text-violet-300">Sobre o DarkWizard</Link>
+              {/* <Link href="/#sobre" className="transition hover:text-violet-300">Sobre o DarkWizard</Link> */}
               <Link href="/termos" className="transition hover:text-violet-300">Termos de Uso</Link>
               <Link href="/privacidade" className="transition hover:text-violet-300">Política de Privacidade</Link>
               <Link href="/garantia-reembolso" className="transition hover:text-violet-300">Garantia e Reembolso</Link>
-              {siteConfig.supportEmail ? (
-                <a href={`mailto:${siteConfig.supportEmail}`} className="transition hover:text-violet-300">Suporte</a>
-              ) : (
-                <span>Suporte: [PREENCHER]</span>
-              )}
             </div>
           </nav>
         </div>
