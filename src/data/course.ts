@@ -72,28 +72,33 @@ export const testimonials: Array<{
 
 export const faqs = [
   {
-    question: "Como funciona o acesso ao DarkWizard?",
+    question: "O DarkWizard possui garantia?",
     answer:
-      "A compra é realizada por meio do checkout oficial da Kiwify. As informações de entrega e acesso são fornecidas conforme a oferta.",
+      "Sim. A compra realizada pela internet conta com o direito de arrependimento no prazo legal de até 7 dias, conforme o Código de Defesa do Consumidor.",
   },
   {
-    question: "Quais são as formas de pagamento?",
+    question: "Como solicito meu reembolso?",
     answer:
-      "As opções disponíveis podem ser consultadas no checkout oficial da Kiwify.",
+      "A solicitação pode ser realizada diretamente pelo canal oficial da Kiwify: https://reembolso.kiwify.com.br.",
   },
   {
-    question: "Posso usar minha própria voz?",
+    question: "Preciso entrar em contato com o suporte do DarkWizard para solicitar reembolso?",
     answer:
-      "Sim. Antes da narração, o DarkWizard permite enviar uma gravação própria baseada no roteiro ou utilizar narração gerada por inteligência artificial.",
+      "Não é necessário. Você pode utilizar diretamente o canal oficial de reembolso da Kiwify.",
   },
   {
-    question: "O DarkWizard também planeja as cenas?",
+    question: "Qual o prazo para receber meu dinheiro de volta?",
     answer:
-      "Sim. A skill auxilia na organização do roteiro em cenas e sequências visuais para preparar os elementos da produção.",
+      "O prazo depende da forma de pagamento e da instituição financeira. Consulte a seção de garantia e reembolso para mais informações.",
   },
   {
-    question: "Existem condições de garantia?",
+    question: "Perco o direito ao reembolso se já tiver acessado ou utilizado o produto?",
     answer:
-      "A política de garantia depende das condições reais da oferta e precisa ser confirmada pelo responsável pelo produto.",
+      "O acesso ou a utilização do produto digital não representa, por si só, renúncia ao direito legal de arrependimento.",
+  },
+  {
+    question: "O DarkWizard garante que vou monetizar meu canal?",
+    answer:
+      "Não. O DarkWizard é uma ferramenta de apoio à produção audiovisual. Resultados dependem de diversos fatores e não podem ser garantidos.",
   },
 ];

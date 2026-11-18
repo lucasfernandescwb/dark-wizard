@@ -258,15 +258,26 @@ export default function Home() {
           </Container>
         </section>
 
-        <section className="bg-[#0d0914] py-16 text-white sm:py-20">
+        <section id="garantia" className="relative overflow-hidden bg-[#0d0914] py-16 text-white sm:py-20">
           <Container>
-            <div className="grid gap-8 rounded-3xl border border-violet-300/15 bg-[#100c18] p-7 sm:grid-cols-[auto_1fr] sm:p-10">
-              <ShieldCheck className="size-12 text-violet-600" aria-hidden="true" />
-              <div>
-                <h2 className="text-2xl font-black text-white">Garantia</h2>
-                <p className="mt-3 leading-7 text-slate-300">{siteConfig.guarantee}</p>
+            <motion.div {...reveal} className="relative grid items-center gap-8 overflow-hidden rounded-3xl border border-violet-300/15 bg-[#100c18] p-7 shadow-[0_24px_80px_rgba(76,29,149,.12)] sm:p-10 lg:grid-cols-[auto_1fr_auto]">
+              <div className="absolute right-[-70px] top-[-110px] size-64 rounded-full bg-violet-600/10 blur-3xl" />
+              <div className="relative grid size-24 place-items-center rounded-3xl border border-violet-300/20 bg-violet-500/10 text-violet-300 sm:size-28">
+                <ShieldCheck className="absolute size-16 text-violet-500/30" aria-hidden="true" />
+                <span className="relative text-5xl font-black leading-none">7</span>
               </div>
-            </div>
+              <div className="relative">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-violet-300">Direito de arrependimento</p>
+                <h2 className="mt-2 text-3xl font-black text-white">7 dias de garantia</h2>
+                <p className="mt-4 max-w-2xl leading-7 text-slate-300">{siteConfig.guarantee}</p>
+              </div>
+              <a
+                href="/garantia-reembolso"
+                className="relative inline-flex min-h-12 items-center justify-center rounded-full border border-violet-300/25 px-5 text-center text-sm font-black text-violet-200 transition hover:border-violet-300/50 hover:bg-violet-400/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500"
+              >
+                Conhecer a política
+              </a>
+            </motion.div>
           </Container>
         </section>
 
